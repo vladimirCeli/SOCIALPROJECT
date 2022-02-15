@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html>
+<head>
+    <title>Django Social</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href='https://vcdjango.blob.core.windows.net/static/normalize.css'>
+    <link rel="stylesheet" type="text/css" href='https://vcdjango.blob.core.windows.net/static/style.css'>
+</head>
+
+<body>
+
+<header class="main-head">
+    <nav class="main-new">
+        <div id="logo">
+            <a class="feed" href="{% url 'feed' %}">
+            <img class="img-logo" alt="profile"  href="{% url 'feed' %}" src='https://vcdjango.blob.core.windows.net/static/social.png' />
+        </div>
+        <div class="items">
+            <div class="itemOne">
+                <h1><a class="feed" href="{% url 'feed' %}">Start</a></h1></div>
+            {% if request.user.is_authenticated %}
+                <div>
+                    <h1>
+                        <a href="{% url 'logout' %}">Logout</a>
+                    </h1>
+                </div>
+                <div>
+                    <h1>
+                        <a class="profile" href="{% url 'profile' request.user.username %}">Profile</a>
+                    </h1>
+                </div>
+                <div>
+                    <h1>
+                        <a class="new" href="{% url 'post' %}">New Post</a>
+                    </h1>
+                </div>
+            {% else %}
+                <div>
+                    <h1>
+                        <a href="{% url 'register' %}">Register</a>
+                    </h1>
+                </div>
+                <div>
+                    <h1>
+                        <a href="{% url 'login' %}">Login</a>
+                    </h1>
+                </div>
+            {% endif %}
+        </div>
+    </nav>
+</header>
+
+{% if messages %}
+    {% for message in messages %}
+        <div class="notification {{ message.tags }}">
+            {{ message }}
+        </div>
+    {% endfor %}
+{% endif %}
+
+<!-------------------------------------
+                Navigation Bar
+-------------------------------------->
+<div class="main">
+
+
+    {% block content %}
+
+    {% endblock content %}
+
+
+</div>
+
+</body>
+</html>

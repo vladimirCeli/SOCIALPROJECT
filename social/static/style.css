@@ -1,0 +1,428 @@
+body {
+    background: #2F4F4F;
+    font-size: 62.5%;
+    font-family: 'Varela Round', Helvetica, Arial, serif;
+}
+
+/* Global Styles*/
+h1 {
+
+}
+
+h2 {
+}
+
+h5 {
+    font-size: 1rem;
+    margin-bottom: 0;
+
+}
+
+p {
+    font-size: 1rem;
+}
+
+button {
+    font-size: 1rem;
+    color: white;
+    padding: 0.4rem 1.4rem;
+    border: none;
+    background: #7A9D96;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+
+img {
+    object-fit: cover;
+}
+
+/* Nav bar */
+.main-head {
+    background: rgba(255, 255, 255, 0.45);
+    color: black;
+}
+
+nav.main {
+    min-height: 7vh;
+    display: flex;
+    width: 65%;
+    margin: auto;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0.5rem;
+}
+
+nav.main ul {
+    display: flex;
+    flex: 1 1 40rem;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+/*
+new configurations
+ */
+#logo {
+    background: #7A9D96;
+}
+
+#logo .img-logo {
+    width: 6em;
+}
+
+/* -----*/
+
+a {
+    font-size: .93rem;
+    text-decoration: none;
+    color: black;
+}
+
+
+.main {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    width: 60%;
+    margin: 5% auto;
+    border: solid 1px rgba(255, 255, 255, 0.5);
+    border-radius: 4px;
+    padding-bottom: 20px;
+}
+
+/* NAVIGATION BAR */
+.second-nav {
+    display: flex;
+    padding: 15px 30px;
+}
+
+.second-nav .feed {
+    flex: 1 1 30px;
+}
+
+.second-nav .feed:hover {
+    flex: 1 1 30px;
+    color: grey;
+}
+
+.second-nav .profile {
+    flex: 1 1 30px;
+}
+
+.second-nav .profile:hover {
+    flex: 1 1 30px;
+    color: grey;
+}
+
+.second-nav .new {
+    flex: 6 1 5rem;
+    text-align: right;
+    text-transform: uppercase;
+    color: #7A9D96;
+}
+
+.second-nav .new:hover {
+    color: grey;
+}
+
+/* Article */
+
+article {
+    width: 93%;
+    margin: auto;
+    padding: 40px 0;
+    border-bottom: 2px solid #ECEEEF;
+}
+
+.username {
+    margin-bottom: .2rem;
+}
+
+.username a {
+    font-size: 1.1rem;
+}
+
+.container-article {
+    display: flex;
+}
+
+.container-article img {
+    height: 68px;
+    width: 68px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+article:last-child {
+    border-bottom: 0;
+}
+
+time {
+    font-size: .8rem;
+    opacity: .7;
+}
+
+.post {
+    font-size: .94rem;
+}
+
+/* PROFILE */
+.profile {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.profile img {
+    height: 100px;
+    width: 100px;
+    margin: 29px 10px 20px 20px;
+    border-radius: 50%;
+}
+
+.profile h2 {
+    margin-top: -10px;
+    font-size: 1.3rem;
+}
+
+/* Followers / Following / Post */
+.follow {
+    display: flex;
+    width: 95%;
+    justify-content: space-around;
+    margin: 30px auto;
+    text-align: center;
+    border-bottom: 2px solid #ECEEEF;
+    padding-bottom: 20px;
+}
+
+
+/*Form Elements*/
+form {
+    margin: 0;
+    font-size: 1rem;
+    width: 100%;
+
+}
+
+input {
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid #D3D8DC;
+    outline: 0;
+    background: #fff;
+    padding: 20px 0 4px;
+    margin: 0 0 20px;
+    color: #777B7E;
+}
+
+input:focus {
+    border-color: #7A9D96;
+    color: #2C3238;
+}
+
+textarea {
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid #D3D8DC;
+    outline: 0;
+    background: #fff;
+    padding: 20px 0 4px;
+    margin: 0 0 20px;
+    color: #777B7E;
+}
+
+textarea:focus {
+    border-color: #7A9D96;
+    color: #2C3238;
+}
+
+button#submit {
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    background: #7A9D96;
+    color: #fff;
+    border: 0;
+    border-radius: 4px;
+    opacity: .8;
+    transition: .35s linear;
+}
+
+button#submit:hover {
+    opacity: 1;
+}
+
+/*Notifications*/
+.notification {
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+.success {
+    background: #43DC7E;
+    color: white;
+}
+
+.error {
+    background: #AB3444;
+    color: white;
+    margin-bottom: 20px;
+}
+
+
+/*Footer*/
+footer {
+    color: white;
+    text-align: center;
+    font-size: .875em;
+    margin: 40px 0;
+}
+
+footer p {
+    opacity: .8;
+}
+
+footer p a {
+    color: white;
+}
+
+img.profile {
+    height: 80px;
+    width: 80px;
+    margin-right: 10px;
+    margin-left: 30px;
+    border-radius: 50%;
+}
+
+
+.follow-button {
+    color: white;
+}
+
+
+/*Media Queries*/
+@media (max-width: 786px) {
+    .main {
+        width: 95%;
+    }
+}
+
+
+/*
+new config
+ */
+
+.main-new {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1em;
+    margin-top: 1em;
+}
+
+.main-new .items {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: auto;
+    position: relative;
+}
+
+
+.items div {
+    margin-right: 2em;
+    border-radius: 1em !important;
+    padding: 0 2em 0 2em;
+    position: relative;
+    width: auto;
+    background: rgba(47, 79, 79, 0.53);
+}
+
+
+.items div::before {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 20%;
+    background: #801441;
+    left: 50%;
+    bottom: 0;
+    transition: all ease 0.2s;
+}
+
+.items div h1 {
+    padding: 0;
+}
+
+.items div:hover::before {
+    width: 100%;
+    left: 0;
+}
+
+.items div a {
+    font-style: revert;
+}
+
+.container-logout {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-login-logout, .div-start-logout {
+    text-align: center;
+    padding: 3em;
+    background: rgba(47, 79, 79, 0.99);
+    backdrop-filter: blur(20px);
+    border: #ECEEEF solid 3px;
+    margin-top: 1em;
+    width: 30vw;
+}
+
+
+.div-login-logout a, .div-start-logout a {
+    font-size: 3em;
+}
+
+
+.div-login-logout:hover, .div-start-logout:hover {
+    background: rgba(47, 79, 79, 0.50);
+}
+
+.input-form, .btn-register, #id_username, #id_password {
+    background: rgba(255, 255, 255, 0.5);
+    border: white solid 3px;
+    border-radius: 3px;
+    padding: 1em;
+    width: 90% !important;
+
+}
+
+input {
+    width: 100%;
+}
+
+.input-form::placeholder {
+    color: white;
+}
+
+.title-account {
+    text-align: center;
+
+}
+
+
+label {
+    display: none;
+}
+.form{
+    padding: 0 14px 0 14px;
+    text-align: center;
+}

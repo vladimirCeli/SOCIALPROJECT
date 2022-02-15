@@ -1,0 +1,15 @@
+{% extends 'social/layout.html' %}
+
+{% block content %}
+<div class=" title-account">
+
+    <h1>New Account</h1>
+
+</div>
+<form class="form" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button  class="btn-register" type="submit" id="submit">Registrarse</button>
+</form>
+
+{% endblock %}

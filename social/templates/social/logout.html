@@ -1,0 +1,15 @@
+{% extends 'social/feed.html' %}
+
+{% block content %}
+    <div class="container-logout">
+    <div class="div-start-logout">
+    <a class="start-logout" href="{% url 'feed' %}">
+        Start
+    </a>
+    </div>
+    <div class="div-login-logout">
+    <a class="login-logout" href="{% url 'login' %}" >Login</a>
+    </div>
+    </div>
+
+{% endblock %}
